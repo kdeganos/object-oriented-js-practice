@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/bank-account.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/bank-account.js"></script>
+    <title>Bank Account</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <form id="signUp">
+            <div class="form-group">
+              <h4>Create Bank Account</h4>
+              <label for="name">Enter Name</label>
+              <input type="text" class="form-control" id="name">
+              <label for="initialDeposit">Initial Deposit Amount</label>
+              <input type="text" value="0" class="form-control" id="initialDeposit">
+              <button type="submit" class="btn">Create bank account</button>
+            </div>
+          </form>
+          <form id="withdrawDepositForm">
+            <h4>Deposit or Withdraw Money:</h4>
+            <label for="depositAmount">Deposit Amount:</label>
+            <input type="text" value="0" class="form-control" id="depositAmount">
+            <label for="withdrawAmount">Withdraw Amount</label>
+            <input type="text" value="0" class="form-control" id="withdrawAmount">
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+        <div class="output col-lg-6">
+          <h4><span id="accountName"></span> account balance</h4>
+          <div class="boxModel">
+            <p>$<span id="currentAccountBalance"></span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

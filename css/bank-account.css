@@ -1,0 +1,27 @@
+.container {
+  width: 20em
+}
+
+.boxModel {
+  border: 1px solid black;
+  outline-style: solid;
+  padding: 1em;
+}
+
+body {
+  background-image: url(mony.jpg);
+  text-shadow: -1px 0 #ecf0f1, 0 1px #ecf0f1, 1px 0 #ecf0f1, 0 -1px #ecf0f1;
+}
+
+.col-lg-6 {
+  background-color: #34495e;
+  padding: 2em;
+  margin-top: 20em
+}
+
+.output {
+    border: 1px solid black;
+    outline-style: double;
+    padding: 2em;
+    margin: 2em;
+}
