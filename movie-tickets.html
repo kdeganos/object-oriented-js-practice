@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/movie-tickets.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.12.0.js"></script>
+    <script src="js/movie-tickets.js"></script>
+    <title>Movie Ticket Generator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form id="ticketInput">
+            <div class="form-group">
+              <label for="movieChoice">Movie</label>
+              <select type="text" class="form-control" id="movieChoice">
+                <option value="0">Star Wars Rogue Squadron</option>
+                <option value="1">Thor 3</option>
+                <option value="2">Gremlins</option>
+              </select>
+              <label for="timeChoice">Times Available</label>
+              <select type="text" class="form-control" id="timeChoice">
+                <option>2</option>
+                <option>4</option>
+                <option>6</option>
+                <option>8</option>
+              </select>
+              <label for="age">Age</label>
+              <select type="text" class="form-control" id="age">
+                <option value="0">0-17</option>
+                <option value="2">18-59</option>
+                <option value="1">60+</option>
+              </select>
+              <button type="submit" class="btn">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="output col-xs-5">
+          <h3>Title: <span id="title"></span></h3>
+          <p>Time: <span id="time"></span></p>
+          <p>Price: <span id="price"></span></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
